@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.satellite.studentmanagement.mapper.CourseMapper">
+
+    <resultMap id="BaseResultMap" type="com.satellite.studentmanagement.model.entity.Course">
+            <id property="courseId" column="courseId" jdbcType="BIGINT"/>
+            <result property="courseName" column="courseName" jdbcType="VARCHAR"/>
+            <result property="courseNum" column="courseNum" jdbcType="VARCHAR"/>
+            <result property="courseDescription" column="courseDescription" jdbcType="VARCHAR"/>
+            <result property="courseTimes" column="courseTimes" jdbcType="VARCHAR"/>
+            <result property="courseTeacher" column="courseTeacher" jdbcType="VARCHAR"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        courseId,courseName,courseNum,
+        courseDescription,courseTimes,courseTeacher,
+        createTime,updateTime,isDelete
+    </sql>
+</mapper>
