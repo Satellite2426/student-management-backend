@@ -1,4 +1,4 @@
-# SpringBoot 项目初始模板
+# SpringBoot 学生成绩管理系统 + 项目初始模板
 
 > 作者：[Satellite](https://github.com/Satellite2426)
 
